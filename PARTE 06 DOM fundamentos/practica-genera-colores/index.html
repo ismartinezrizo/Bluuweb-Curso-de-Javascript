@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GENERAR COLORES</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f1dabc;
+    }
+
+    .container {
+      width: 45%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #fff;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.50);
+      padding-bottom: 50px;
+      border-radius: 10px;
+    }
+
+    h1 {
+      color: #a407ff;
+    }
+
+    #div_color_picker {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #label_paleta_color {
+      display: block;
+      font-size: 2em;
+      color: #021f18;
+      font-weight: bold;
+    }
+
+    #paleta_color {
+      cursor: pointer;
+      width: 100%;
+      height: 50px;
+      border-radius: 10px;
+
+    }
+
+    #btn_visualizar {
+      cursor: pointer;
+      padding: 10px;
+      margin-top: 30px;
+      width: 50%;
+      background-color: #a407ff;
+      color: #fff;
+      font-weight: bold;
+      font-size: 2em;
+      border: none;
+      border-radius: 20px;
+    }
+
+    .label_resultado {
+      display: flex;
+      font-size: 2em;
+      font-weight: bold;
+      padding: 20px;
+      margin: 20px;
+    }
+
+    #copiar {
+      margin-left: 10px;
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      display: none;
+    }
+
+    #copiar:hover {
+      border: 2px solid #000;
+    }
+
+    #textoCopiado {
+      color: green;
+      display: none;
+      font-size: 0.5em;
+    }
+
+    #cajaColor {
+      width: 50%;
+      height: 100px;
+      border: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>🎨 GENERA COLORES 🎨</h1>
+    <div id="div_color_picker">
+      <label for="paleta_color" id="label_paleta_color">Color picker</label><br>
+      <input type="color" name="paleta_color" id="paleta_color" title="SELECIONE UN COLOR Y DE CLICK EN VISUALIZAR">
+    </div>
+
+    <input type="submit" value="Visualizar" id="btn_visualizar">
+
+    <div class="label_resultado">
+      <span id="textoCopiado">Codigo copiado&nbsp;</span>
+      <span id="resultado_hex"></span>
+      <input type="button" value="Copiar📃" id="copiar">
+    </div>
+
+    <div id="cajaColor"></div>
+  </div>
+
+  <script src="practica_genera_colores.js"></script>
+</body>
+
+</html>

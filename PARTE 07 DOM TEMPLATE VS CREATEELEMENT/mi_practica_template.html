@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practica Template - Carrito</title>
+  <link rel="stylesheet" href="boostrap/bootstrap.min.css">
+</head>
+
+<body>
+
+  <div class="container card mt-3 p-3 bg-warning border-2">
+    <div class="row">
+      <h1 class="text-center pb-3">Agregar Frutas</h1>
+      <div class="col-sm-6 pb-3">
+        <label for="nombreFruta" class="form-label">NOMBRE</label>
+        <input type="text" placeholder="Nombre de la fruta" name="nombreFruta" id="nombreFruta"
+          class="form form-control">
+      </div>
+      <div class="col-sm-6">
+        <label for="cantidadFruta" class="form-label">CANTIDAD</label>
+        <input type="number" min="1" placeholder="Cantidad de frutas" name="cantidadFruta" id="cantidadFruta"
+          class="form form-control">
+      </div>
+      <button class="btn btn-outline-success mt-3 w-25 m-auto" id="btnAgregar">Agregar🥧</button>
+    </div>
+  </div>
+
+
+  <div class="container text-center">
+    <table class="table table-striped mt-5">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Cantidad</th>
+          <th>Opciones</th>
+        </tr>
+      </thead>
+      <tbody id="cajadatos">
+        <!-- <tr>
+          <td>Manzana</td>
+          <td>1</td>
+          <td><button class="btn btn-danger">Eliminar</button></td>
+        </tr> -->
+      </tbody>
+    </table>
+  </div>
+
+  <template id="template">
+    <tr>
+      <td class="nombre-producto">Manzana</td>
+      <td class="cantidad">1</td>
+      <td>
+        <button class="btn btn-danger" id="btnEliminar">Eliminar</button>
+      </td>
+    </tr>
+  </template>
+
+
+
+  <script src="mi_practica_template.js"></script>
+</body>
+
+</html>
