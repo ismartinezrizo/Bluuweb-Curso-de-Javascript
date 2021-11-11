@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practica Array - Carrito</title>
+  <link rel="stylesheet" href="boostrap/bootstrap.min.css">
+</head>
+
+<body>
+
+  <h1 class="text-center mt-3 text-warning">🛒 - CARRITO DE COMPRA - 🛒</h1>
+
+  <div class="container bg-success pt-2 rounded-3">
+    <article>
+      <div class="row">
+        <section class="col-sm-4 frutaManzana mb-2">
+          <div class="card">
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title">Manzana 🍎</h5>
+              <button class="btn btn-outline-success" data-fruta="manzana">Agregar</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="col-sm-4 frutaBanana mb-2">
+          <div class="card">
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title">Banana 🍌</h5>
+              <button class="btn btn-outline-success" data-fruta="banana">Agregar</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="col-sm-4 frutaPina mb-2">
+          <div class="card">
+            <div class="card-body d-flex flex-column align-items-center">
+              <h5 class="card-title">Piña 🍍</h5>
+              <button class="btn btn-outline-success" data-fruta="piña">Agregar</button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </article>
+  </div>
+
+  <div class="container mt-5">
+    <h5 class="text-center"><strong>LISTA</strong></h5>
+    <ul class="list-group" id="listaCarrito">
+      <!-- agregado desde javascript -->
+    </ul>
+  </div>
+
+  <template id="template">
+    <li class="list-group-item d-flex justify-content-between">
+      <span class="nombreFruta">Nombre fruta</span>
+      <span class="cantidad badge rounded-pill bg-success">1</span>
+    </li>
+  </template>
+
+
+  <script src="mi_practica_array.js"></script>
+</body>
+
+</html>
