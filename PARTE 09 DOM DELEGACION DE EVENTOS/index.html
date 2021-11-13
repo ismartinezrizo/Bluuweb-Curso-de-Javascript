@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DELEGACION DE EVENTOS</title>
+  <link rel="stylesheet" href="boostrap/bootstrap.min.css">
+</head>
+
+<body>
+
+  <!-- PARA STOPPROPAGATION
+  <div class="container">
+    <div class="border border-primary border-5 p-5 m-3" id="padre">
+      <h1>Elemento Padre</h1>
+      <div class="border border-secondary border-5 p-5 m-3" id="hijo">
+        <h2>Elemento Hijo</h2>
+        <div class="border border-danger border-5 p-5 m-3" id="nieto">
+          <h2>Elemento Nieto</h2>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- PREVENT_DEFAULT
+  <div class="container mt-5">
+    <form id="formulario">
+      <input type="text" name="nombre" class="form form-control" placeholder="Nombre">
+      <button type="submit" class="btn btn-warning mt-2">Enviar</button>
+    </form>
+    <a href="#" class="btn btn-danger text-center d-block mt-3">IR A [a]</a>
+  </div> -->
+
+  <!-- DELEGACION DE EVENTOS
+  <div class="container">
+    <div class="border border-primary border-5 p-5 m-3" id="padre" data-div="padre">
+      <h1>Elemento Padre</h1>
+      <div class="border border-secondary border-5 p-5 m-3" id="hijo" data-div="hijo">
+        <h2>Elemento Hijo</h2>
+        <div class="border border-danger border-5 p-5 m-3" id="nieto" data-div="nieto">
+          <h2>Elemento Nieto</h2>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+
+
+
+  <script src="boostrap/bootstrap.bundle.min.js"></script>
+
+  <!-- <script src="stopPropagation.js"></script> -->
+  <!-- <script src="preventDefault.js"></script> -->
+  <script src="delegacion-de-eventos.js"></script>
+</body>
+
+</html>
