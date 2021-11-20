@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="boostrap/bootstrap.min.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1 class="text-center text-dark bg-info py-3">Formulario</h1>
+
+    <form action="" id="formulario" novalidate>
+
+      <input class="form form-control mb-2" type="text" name="userName" id="userName" placeholder="Ingrese nombre"
+        autocomplete="off" required minlength="3" maxlength="20" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+        title="Solo letras">
+
+      <input class="form form-control mb-2" type="email" placeholder="Ingrese correo" name="userEmail" id="userEmail"
+        autocomplete="off" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
+        title=" Ingrese un correo valido" required>
+
+      <input class="btn btn-outline-success" type="submit" value="Enviar">
+
+    </form>
+  </div>
+
+  <!-- <script src="expresionesRegulares.js"></script> -->
+  <script src="script.js"></script>
+</body>
+
+</html>
